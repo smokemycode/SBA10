@@ -11,7 +11,7 @@ export function FavoritesProvider({ children }) {
     // Adds an ID to the favorites list
     const addFavorite = (recipeId) => {
         // Makes sure we have no duplicates
-        id (!favorites.includes(recipeId)) {
+        if (!favorites.includes(recipeId)) {
             // If not add it to the list
             setFavorites([...favorites, recipeId]);
         }
