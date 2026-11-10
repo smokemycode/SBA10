@@ -4,11 +4,13 @@ import Category from './pages/Category';
 import RecipeDetail from './pages/RecipeDetail';
 import Favorites from './pages/Favorites';
 import Search from './pages/Search';
+import Navbar from './components/Navbar';
 
 // This is the main door to the Recipe app. Pages will be here later.
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         {/* The path "/" means the home page. */}
         <Route path="/" element={<Home />} />
